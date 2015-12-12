@@ -1,0 +1,295 @@
+= Call me Apache Groovy
+Cédric Champeau (@CedricChampeau)
+2015-12-14
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+:navigation:
+:menu:
+:goto:
+:status:
+
+== uk
+// UK Flag: intro
+
+== groovy
+// Apache Groovy background
+
+== Year 2003
+
+image::people/james-strachan.png[]
+
+=== Highlights
+
+* Creating a *dynamic language* for the JVM
+* Inspired by Ruby
+
+== Year 2004
+
+image::people/glaforge.jpg[]
+
+=== Highlights
+
+* Builders (XML by John Wilson)
+* Antlr grammar (Jeremy Rayner)
+
+== Year 2005
+
+image::people/blackdrag.jpg[]
+
+=== Highlights
+
+* James leaves the project
+* Grails work started
+
+== Year 2006
+
+image::people/paulk.jpg[]
+
+=== Highlights
+
+* Guillaume takes lead
+* Windows installer (Joachim Baumann)
+* Grails 0.1
+
+== Year 2007
+
+=== Year 2007 celebration
+
+=== Year 2007
+
+image::people/danno-ferrin.jpg[]
+
+=== Year 2007
+
+image::people/alex-tkachman.jpg[]
+
+=== Highlights
+
+* Groovy 1.5
+** On par with Java (generics, annotations, enums...)
+** Elvis operator
+** Joint compiler
+* First _Groovy and Grails eXchange_
+
+== Year 2008
+
+image::people/g2one.png[]
+
+=== Year 2008
+
+image::people/graeme-rocher.jpg[]
+
+=== Highlights
+
+* Grails 1.0 released
+* G2One acquired by SpringSource
+
+== Year 2009
+
+[quote, James Strachan]
+I can honestly say if someone had shown me the Programming Scala book by Martin Odersky, Lex Spoon & Bill Venners back in 2003 I'd probably have never created Groovy.
+
+=== Highlights
+
+* Groovy 1.6
+** performance improvements
+** AST xforms
+
+== Year 2010
+// DSLs
+image::people/peter-niederwieser.jpg[]
+
+=== Highlights
+
+* Groovy 1.7
+** Anonymous inner classes
+** Power Asserts
+** Grape
+** Customizing the Truth
+
+== Year 2011
+
+image::people/cedric-champeau.jpg[]
+
+=== Highlights
+
+* Groovy 1.8
+** Performance
+** Command chain expressions
+** Closures as annotations values (GContracts, ...)
+* Grails 2.0
+
+== Year 2012
+
+image::people/pascal.jpg[]
+
+=== Highlights
+
+* Groovy 2.0
+** `@CompileStatic`
+** modularization
+** alternate runtime
+* Gradle 1.0
+
+== Year 2013
+// Docs
+
+52 unique contributors!
+
+=== Highlights
+
+* Groovy 2.1
+** Full invokedynamic support
+** type checking extensions
+** `@DelegatesTo`
+** meta-annotations
+* Groovy 2.2
+** implicit closure coercion
+** improved AST xforms (`@Memoized`, ...)
+* GPars 1.0
+
+== Year 2014
+
+image::people/grooid.png[]
+
+66 unique contributors!
+
+=== Highlights
+
+* Groovy 2.3
+** Runs on JDK 8
+** Traits
+** Markup Template Engine
+* Gradle 2.0
+
+== Year 2015
+
+image::people/asf_logo.jpg[]
+
+=== Highlights
+
+* Pivotal stops sponsoring
+* Groovy 2.4
+** Android support
+** Smaller bytecode
+* Grails 3.0
+* OCI takes over Grails
+* Gradleware becomes Gradle, Inc
+
+=== PMC
+
+* Guillaume Laforge (PMC Chair)
+* Cédric Champeau
+* Paul King
+* Guillaume Laforge
+* Pascal Schumacher
+* Jochen Theodorou
+* Andrew Bayer
+* Jim Jagielski
+* Roman Shaposhnik
+* Konstantin Boudnik
+
+=== Committers
+
+* Andrés Almiray
+* Dierk König
+* Russel Winder
+* Keegan Witt
+* Shil Sinha
+* Graeme Rocher
+
+== Community over code
+
+== GR8Conf
+
+== Greach
+
+== Groovy guys
+
+=== GPars
+
+image::people/russel-winder.jpg[]
+
+=== GPars
+
+image::people/dierk-koenig.jpg[]
+
+=== GPars
+
+image::people/vaclav.jpg[]
+
+=== Griffon
+
+image::people/andres-almiray.jpg[]
+
+=== Gradle
+
+image::people/hans-dockter.jpg[]
+
+=== Gradle
+
+image::people/adam-murdoch.jpg[]
+
+== Year 2016
+
+=== Highlights
+
+* Groovy 2.5
+** Macros
+* Groovy 3.0 development
+** Jigsaw?
+** Binary compatibility?
+** Require JDK8+?
+
+== Cheers
+
+image::people/cheers.jpg[]
+
+== Thanks to all our contributors!
+
+++++
+<div id="contributors"></div>
+<script language="javascript">
+var contributors = new Array("Paul King", "Cédric Champeau", "Jochen Theodorou", "James Strachan", "Guillaume Laforge", "Jason Dillon", "Roshan Dawrani", "Danno Ferrin", "Alex Tkachman", "John Wilson", "Thibault Kruse", "Jeremy Rayner", "Russel Winder", "Hamlet D'arcy", "Dierk Koenig", "Pilho Kim", "Sam Pullara", "Peter Niederwieser", "Jim White", "Pascal Schumacher", "Andres Almiray", "Boc Mcwhirter", "Graeme Rocher", "Andre Steingress", "Andrey Bloschetsov", "Christian Stein", "Martin C. Martin", "Marc Guillemot", "Tim Yates", "John Wagenleitner", "René Scheibe", "Chris Poirier", "Joachim Baumann", "Alexandru Popescu", "Martin Kempf", "Yu Kobayashi", "Bing Ran", "Keegan Witt", "Alan Green", "Thom Nichols", "Sergey Egorov", "Guillaume Alleon", "Steve Goetze", "Jeff Brown", "Peter Ledbrook", "Shil Sinha", "Paolo Di Tommaso", "James Northrop", "Aseem Bansal", "John Stump", "Kenneth Endfinger", "Tomek Janiszewski", "Michael Schuenck", "Bertrand Delacretaz", "Christoph Frick", "Zohar Melamed", "John Rose", "Andrew Eisenberg", "Martin Hauner", "Jacopo Cappellato", "Matias Bjarland", "Tobia Conforto", "Craig Andrews", "Hein Meling", "Sargis Harutyunyan", "Frank Pavageau", "Scott Stirling", "Adrian Nistor", "Baruch Sadogursky", "Franck Rasolo", "Lari Hotari", "Jeff Scott Brown", "Masato Nagai", "Yasuharu Nakano", "Damage Control", "Vladimir Vivien", "Andrew Taylor", "Larry Jacobson", "Andrew Hamilton", "Edinson E. Padrón Urdaneta", "Maksym Stavytskyi", "Marc Paquette", "Michal Kordas", "Christiaan Ten Klooster", "Rich Freedman", "Stephane Maldini", "Luke Daley", "Jochen Eddelbüttel", "Luke Kirby", "Richard Hightower", "Bloshchetsov Andrey Evgenyevich", "Johannes Link", "Jason Winnebeck", "Jochen Kemnade", "Sean Gilligan", "Kasper Nielsen", "Yuri Schimke", "Bobby Warner", "Tiago Fernandez", "Vladimir Orany", "Rafael Luque", "Dan Allen", "Jan Sykora", "Martin Stockhammer", "Uehara Junji", "Vihang D", "Dominik Fay", "Edinson Padrón Urdaneta", "Jake Gage", "John Hurst", "Kamil Szymanski", "Larry Battle", "Nick Grealy", "Sergei Egorov", "Aslak Hellesoy", "James Williams", "Colin Harrington", "Dirk Weber", "Johnny Wey", "Kenneth Kousen", "Mathieu Bruyen", "Paul Bakker", "Paulo Poiati", "Sean Flanigan", "Suk-hyun Cho", "Alan Thompson", "Alessio Stalla", "Eric Dahl", "Ingo Hoffmann", "Jacob Aae Mikkelsen", "John Engelman", "Jon Schneider", "Karel Piwko", "Kohsuke Kawaguchi", "Michal Mally", "Miro Bezjak", "Olivier Croquette", "Rob Upcraft", "Stefan Armbruster", "Yasuharu Nakano", "Andy Hamilton", "Carsten Lenz", "Chris Earle", "David Avenante", "David Nahodil", "David Tiselius", "Dimitar Dimitrov", "Grant Mcconnaughey", "Jeff Sheets", "Jess Sightler", "Logan Gorence", "Manuel Prinz", "Marcin Grzejszczak", "Marcin Zajaczkowski", "Nathan Mische", "Peter Swire", "Sagar Sane", "Stephen Mallette", "Tobias Schulte", "Wil Selwood", "Alex Spurling", "Anders D. Johnson", "Andrew Reitz", "Andy Wilkinson", "Bruno Casali", "Danny Hyun", "David Pursehouse", "Dmitry Andreychuk", "Dominik Przybysz", "Emmanuel Bourg", "Fabio De Matos", "Felipe Mamud", "Jakub Wilk", "Jason Plurad", "Jonatas Emidio", "Keith Suderman", "Marc Bogaerts", "Marcin Erdmann", "Mario Garcia", "Matt Whipple", "Oliver Gondža", "Pap Lőrinc", "Patrice Clement", "Radovan Synek", "Rahul Somasunderam", "Rohan Ranade", "Søren Berg Glasius", "Xavier Detant", "Anand Raman", "Rohit Kumar");
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+shuffle(contributors);
+var timer;
+
+    function textFade(index){
+       var text = contributors[index];
+       $("#contributors").html(text).fadeIn(500);
+        timer = setTimeout(function() {
+	    $("#contributors").fadeOut(200, function () { textFade((index+1)%contributors.length); });
+             },1000);
+    }
+
+    $(document).ready(function() {
+        textFade(0);
+    });
+</script>
+++++
+
+== Credits
+
+image::GradleLogoLarge.png[]
+

@@ -1,0 +1,81 @@
+asciidoctor {
+    dependsOn jrubyPrepareGems, download, copyTheme
+
+    sources {
+        include 'index.adoc'
+    }
+
+    resources {
+        from(sourceDir) {
+            include 'images/**'
+        }
+        from(downloadDir) {
+            include 'reveal.js/**'
+        }
+    }
+
+    backends 'revealjs'
+
+    attributes 'sourcedir': project.sourceSets.main.java.srcDirs[0],
+            'endpoint-url': 'http://example.org',
+            'source-highlighter': 'coderay',
+            'highlightjs-theme': '../../../src/docs/theme/idea.css',
+            'imagesdir': './images',
+            'toc': 'left',
+            'icons': 'font',
+            'setanchors': 'true',
+            'idprefix': '',
+            'idseparator': '-',
+            'basedir': projectDir,
+            'docinfo1': 'true',
+            'project-version': '1.0',
+            'revealjs_transition': 'linear',
+            'revealjs_history': 'true',
+            'revealjs_slideNumber': 'true',
+            'revealjs_theme': 'night',
+            'examples': file("${projectDir}/examples")
+
+    options template_dirs: [new File(templateDir, 'asciidoctor-reveal.js-master/templates/slim').absolutePath]
+
+    doLast {
+        def mappings = [
+                uk                     : ['https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg', '#ffffff', 'Groovy & Grails exchange'],
+                groovy                 : ['http://groovy-lang.org/img/groovy-logo-white.svg', '', ''],
+                past                   : ['#ffffff', '#000000', 'Past'],
+                present                : ['#0000ff', '#ffffff', 'Present'],
+                future                 : ['#ff0000', '#ffffff', 'Future'],
+                'year-2007-celebration': ['https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Celebration_of_Light_Brazil_2012_16.JPG/1024px-Celebration_of_Light_Brazil_2012_16.JPG', '#ff33cc', 'Groovy 1.0 released!'],
+                'year-2003'            : ['#11dd33', '#ffffff', 'Year 2003'],
+                'year-2004'            : ['#ff3333', '#ffffff', 'Year 2004'],
+                'year-2005'            : ['#5555ff', '#ffffff', 'Year 2005'],
+                'year-2006'            : ['#77ff77', '#ffffff', 'Year 2006'],
+                'year-2007'            : ['#ff9999', '#ffffff', 'Year 2007'],
+                'year-2007-1'          : ['#ff9999', '#ffffff', 'Year 2007'],
+                'year-2007-2'          : ['#ff9999', '#ffffff', 'Year 2007'],
+                'year-2007-3'          : ['#ff9999', '#ffffff', 'Year 2007'],
+                'year-2008'            : ['#bbbbff', '#ffffff', 'Year 2008'],
+                'year-2008-2'          : ['#bbbbff', '#ffffff', 'Year 2008'],
+                'year-2009'            : ['#ff0000', '#ffffff', 'Year 2009'],
+                'year-2010'            : ['#33ff66', '#ffffff', 'Year 2010'],
+                'year-2011'            : ['#bbccdd', '#ffffff', 'Year 2011'],
+                'year-2012'            : ['#11bbff', '#000000', 'Year 2012'],
+                'year-2013'            : ['#ff0066', '#000000', 'Year 2013'],
+                'year-2014'            : ['#ff66ff', '#000000', 'Year 2014'],
+                'year-2015'            : ['#44ffcc', '#000000', 'Year 2015'],
+                'year-2016'            : ['https://dl.dropboxusercontent.com/u/20288797/giant_explosion-wide.jpg', '#ffffff', 'Year 2016'],
+                'gr8conf'              : ['https://pbs.twimg.com/media/CU-pLdtUsAASA_l.jpg:large', '', ''],
+                'greach'               : ['http://engineering.ticketbis.com/content/images/2015/06/greach.jpg', '', ''],
+                'community-over-code'  : ['#ffff00', '#0000ff', 'Community over code'],
+                'pmc'                  : ['#0099ff', '#FF6600', 'PMC'],
+                'committers'           : ['#00cc99', '#FF3366', 'Committers']
+        ]
+        def html = new File("$buildDir/asciidoc/revealjs/index.html")
+        def fixed = html.text.replace('<body>', '<body><div id="header"></div>')
+        mappings.each { id, replacements ->
+            def (bgColor, textColor, title) = replacements
+            fixed = fixed.replaceAll("""<section id="$id"><h2>(.+?)</h2>""", """<section id="$id" data-background='${bgColor}'><h2 style='color: ${textColor}'>$title</h2>""")
+        }
+        html.withWriter('utf-8') { it.write fixed }
+    }
+
+}
