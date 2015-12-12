@@ -74,7 +74,7 @@ image::people/alex-tkachman.jpg[]
 
 == Year 2008
 
-image::people/g2one.png[]
+image::people/g2one.jpg[]
 
 === Year 2008
 
