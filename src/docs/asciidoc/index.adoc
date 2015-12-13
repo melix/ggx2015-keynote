@@ -51,6 +51,7 @@ image::people/paulk.jpg[]
 * Guillaume takes lead
 * Windows installer (Joachim Baumann)
 * Grails 0.1
+* 50% less commits as in 2006
 
 == Year 2007
 
@@ -71,6 +72,7 @@ image::people/alex-tkachman.jpg[]
 ** Elvis operator
 ** Joint compiler
 * First _Groovy and Grails eXchange_
+* Groovy in Action, first edition!
 
 == Year 2008
 
@@ -95,6 +97,7 @@ I can honestly say if someone had shown me the Programming Scala book by Martin 
 * Groovy 1.6
 ** performance improvements
 ** AST xforms
+* VMware acquires SpringSource
 
 == Year 2010
 // DSLs
@@ -148,6 +151,7 @@ image::people/pascal.jpg[]
 ** implicit closure coercion
 ** improved AST xforms (`@Memoized`, ...)
 * GPars 1.0
+* VMware spins off Pivotal
 
 == Year 2014
 
@@ -175,7 +179,7 @@ image::people/asf_logo.jpg[]
 ** Smaller bytecode
 * Grails 3.0
 * OCI takes over Grails
-* Gradleware becomes Gradle, Inc
+* Groovy in Action, 2d edition
 
 === PMC
 
@@ -200,6 +204,8 @@ image::people/asf_logo.jpg[]
 * Graeme Rocher
 
 == Community over code
+
+== Downloads
 
 == GR8Conf
 
@@ -290,6 +296,8 @@ var timer;
 ++++
 
 == Credits
+
+http://melix.github.io/blog/2015/02/who-is-groovy.html
 
 image::GradleLogoLarge.png[]
 
